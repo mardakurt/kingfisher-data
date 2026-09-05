@@ -3,10 +3,20 @@
 <title>Kingfisher reference data</title>
 <main><h1>Kingfisher reference data</h1>
 <p>Public, data-only distribution. No Kingfisher application source is hosted here.</p>
-<h2>Elite reference v1</h2>
-<p><a href="reference-elite-v1/manifest.json">Pack manifest</a> — 422,059 accepted archive records, 249,245 full scores, 684,269 aggregate positions. Explorer positions through ply 35; this is not 35 full moves.</p>
-<p>Derived from the <a href="https://database.lichess.org/#broadcasts">Lichess broadcast archive</a>, retrieved 1 September 2026. Attribution: Lichess broadcast archive — lichess.org. Data license: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
-<p>Transformation: rating/title/length filtering, position replay and aggregation, player indexes, sharding and gzip compression. The manifest records upstream and derived SHA-256 checksums.</p>
-<p>This is the existing v1 dataset. It is a filtered broadcast collection, not proof of all official over-the-board games. Broadcast metadata and statistical deduplication are under audit; do not infer complete population coverage from the pack name. Deep-reference updates will have separate versioned paths.</p>
-<p>Install only a manifest you trust. Checksums detect byte changes; they do not establish publisher authenticity or source accuracy.</p>
+
+<h2>Elite OTB reference v2</h2>
+<p><a href="reference-elite-v2/manifest.json">Pack manifest</a> — 407,538 accepted archive records, all of them with full scores, 5,438,808 aggregate positions, 33,607 player identities. Explorer positions through ply 40. That is 40 <em>plies</em>, which is 20 full moves; it is not 40 moves.</p>
+<p>Derived from the <a href="https://database.lichess.org/#broadcasts">Lichess broadcast archive</a>, 2020 to July 2026, retrieved 5 September 2026. Attribution: Lichess broadcast archive — lichess.org. Data license: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+<p>Transformation: rating, title and length filtering; exclusion of explicit bot, engine and online event labels; replay through Kingfisher's own rules code; per-position aggregation; player indexes; sharding and gzip compression. No move was altered. The manifest records the SHA-256 of every upstream archive and of every derived chunk.</p>
+<p>This is a filtered broadcast collection. It is <em>not</em> a complete census of over-the-board chess: a game is here because somebody relayed it through Lichess, and broadcast metadata is not proof of anything beyond that. Do not infer population coverage from the pack's name.</p>
+
+<h2>Recent Theory reference v1</h2>
+<p><a href="reference-recent-v1/manifest.json">Pack manifest</a> — 44,200 games from the last two years, 918,069 aggregate positions, 2,567 player identities. Explorer positions through ply 40.</p>
+<p>Same upstream, same licence, same transformation, narrower window and a lower frequency threshold past ply 18: this is a recency source, meant to show what is being played now rather than to weigh evidence over seven years.</p>
+
+<h2>Retired versions</h2>
+<p>Elite reference v1 was withdrawn on 5 September 2026 and replaced by v2, which is deeper and covers more games. It was published for four days and no released Kingfisher build referred to it. Version directories are otherwise not replaced or removed once a build has shipped against them.</p>
+
+<h2>Before you install</h2>
+<p>Install only a manifest you trust. Checksums detect byte changes; they do not establish publisher authenticity, and they say nothing about whether the source data is accurate.</p>
 </main></html>
