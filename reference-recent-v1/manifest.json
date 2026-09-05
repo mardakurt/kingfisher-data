@@ -1,0 +1,856 @@
+{
+  "format": "kingfisher-pack/1",
+  "id": "kingfisher-recent-theory",
+  "name": "Recent Theory Reference",
+  "description": "The last two years of rating- and title-filtered Lichess broadcast games, kept at a low frequency threshold so that recent and rare continuations survive. A recency source, not a weight-of-evidence one.",
+  "version": "1",
+  "builtAt": "2026-09-05",
+  "license": {
+    "id": "CC-BY-SA-4.0",
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Lichess broadcast archive — lichess.org, CC BY-SA 4.0"
+  },
+  "provenance": {
+    "source": "Lichess broadcast archive",
+    "url": "https://database.lichess.org/#broadcasts",
+    "retrieved": "2026-09-05",
+    "transformation": "Games were parsed, filtered by rating and length, deduplicated, replayed through Kingfisher's own rules code, and reduced to per-position move aggregates, a player table and full game scores. No move was altered.",
+    "upstream": [
+      {
+        "file": "lichess_db_broadcast_2026-07.pgn.zst",
+        "sha256": "714d0eb99f99fca8d791142038b6c59b5ca6a51b3339bd3891a92f4bdffcbf0c"
+      },
+      {
+        "file": "lichess_db_broadcast_2026-06.pgn.zst",
+        "sha256": "65905d611c0d78d90ab57cd9edd3821f4119b46c22b5489fd7e265a74c6767b3"
+      },
+      {
+        "file": "lichess_db_broadcast_2026-05.pgn.zst",
+        "sha256": "d212987f7972a70268809ff6c726acff8bf0987161aacd7647b160f8564f6a53"
+      },
+      {
+        "file": "lichess_db_broadcast_2026-04.pgn.zst",
+        "sha256": "97b036f3a3639ae3be59c1508b1e18c76ac1b2e8fada4587d1b5c5a93c438d5d"
+      },
+      {
+        "file": "lichess_db_broadcast_2026-03.pgn.zst",
+        "sha256": "1a5ad83fc9f440dcdadde17b11cc81a953f4895aaf8b8588470b3078209dc7fc"
+      },
+      {
+        "file": "lichess_db_broadcast_2026-02.pgn.zst",
+        "sha256": "ea977569917718b33940ba5379db2adad77d58876c29084294d357f15fe6a31b"
+      },
+      {
+        "file": "lichess_db_broadcast_2026-01.pgn.zst",
+        "sha256": "9abf10d106a8bf5ecd41359825b3bf55c2f124c8a790a380cb98844c2cca5dca"
+      },
+      {
+        "file": "lichess_db_broadcast_2025-12.pgn.zst",
+        "sha256": "fadbe80ee65e9f8499578e934d7600ece69d09b1cf8abc75fdd3bd840f61e63f"
+      },
+      {
+        "file": "lichess_db_broadcast_2025-11.pgn.zst",
+        "sha256": "39deb43faf6e2f4569a76f369ca0a3b87aa7787330c9e2ff87705c6f3bf32ff1"
+      },
+      {
+        "file": "lichess_db_broadcast_2025-10.pgn.zst",
+        "sha256": "77be4c998ca8d3b303928e1619f0f9dc2a03a71d5ab6a59d02d42291ae0524e3"
+      },
+      {
+        "file": "lichess_db_broadcast_2025-09.pgn.zst",
+        "sha256": "da3a261e926a2c0f5e79c393818e643d76448edf94cfdaefa3892258a6f9e7ba"
+      },
+      {
+        "file": "lichess_db_broadcast_2025-08.pgn.zst",
+        "sha256": "f925d1f3b494517c8eae223976a886bed77a7b8627b17ec287e50cdda766dae8"
+      },
+      {
+        "file": "lichess_db_broadcast_2025-07.pgn.zst",
+        "sha256": "1ffc6b775d27631ac988dd816a137b6dd0ec05561aeee8b45861e0c08dbcb10b"
+      },
+      {
+        "file": "lichess_db_broadcast_2025-06.pgn.zst",
+        "sha256": "b226325f2798003e4811dca8ea9556dc91837ec9ae3493f00ba102b50a73a43c"
+      },
+      {
+        "file": "lichess_db_broadcast_2025-05.pgn.zst",
+        "sha256": "ed1b62de4c4f81e19d8e269a0ddbb4c5133361ff942439938f9d20f3d904795c"
+      },
+      {
+        "file": "lichess_db_broadcast_2025-04.pgn.zst",
+        "sha256": "6b6fd9e9e79a94e80d0f556fb323ad951922fdff1f42089fc18a348e65d79624"
+      },
+      {
+        "file": "lichess_db_broadcast_2025-03.pgn.zst",
+        "sha256": "840bdb7d640f82032f8373c86efcb69d0801c0d54cf3edf2152e4b8d25b8da87"
+      },
+      {
+        "file": "lichess_db_broadcast_2025-02.pgn.zst",
+        "sha256": "f92d0fea95e6c733898a920c0790a8c02f3f8a1e1c9ca0c42f15330cd5430434"
+      },
+      {
+        "file": "lichess_db_broadcast_2025-01.pgn.zst",
+        "sha256": "301bb574c3aca71d51a070ef7c43954434c10601e90869a262adf21c38801423"
+      },
+      {
+        "file": "lichess_db_broadcast_2024-12.pgn.zst",
+        "sha256": "b2ae52c6cacfc078045760e2f4fd5e8e5ae3d24accf6d02fb8692d3fb5b02e9e"
+      },
+      {
+        "file": "lichess_db_broadcast_2024-11.pgn.zst",
+        "sha256": "354d96760609711ce471c131339a3a999d83929cb790615be4d76fb00bd3a89d"
+      },
+      {
+        "file": "lichess_db_broadcast_2024-10.pgn.zst",
+        "sha256": "7d2042e12bfd9e077402865dd4ca0c335d68da31d414a88f2c94842b48971603"
+      },
+      {
+        "file": "lichess_db_broadcast_2024-09.pgn.zst",
+        "sha256": "e6b441d0c8994648be6b024e7d14feaaaba675567b76607decf6cc91cfeda447"
+      },
+      {
+        "file": "lichess_db_broadcast_2024-08.pgn.zst",
+        "sha256": "1ad8ce6ab83688ff2813b62ae98b0962ab467756c3cf79641c4a7ce7e99f2137"
+      }
+    ]
+  },
+  "counts": {
+    "games": 44200,
+    "openable": 18151,
+    "positions": 918069,
+    "players": 2567
+  },
+  "maxPositionPly": 40,
+  "recentSince": 2026,
+  "shards": {
+    "explorer": 48,
+    "game": 24,
+    "players": 4,
+    "playergames": 4
+  },
+  "chunks": [
+    {
+      "id": "explorer-000",
+      "kind": "explorer",
+      "shard": 0,
+      "file": "explorer-000.kfp.gz",
+      "bytes": 602677,
+      "sha256": "97520d0db173b54490773dfe68166eb88b4280d0f37f416b9732fd3f9ca425aa",
+      "entries": 18933
+    },
+    {
+      "id": "explorer-001",
+      "kind": "explorer",
+      "shard": 1,
+      "file": "explorer-001.kfp.gz",
+      "bytes": 620824,
+      "sha256": "e2d4d82a8ae949ae42a836b5288b0687e0d5173ea7871d707df1f199f5a9a3c0",
+      "entries": 19368
+    },
+    {
+      "id": "explorer-002",
+      "kind": "explorer",
+      "shard": 2,
+      "file": "explorer-002.kfp.gz",
+      "bytes": 595421,
+      "sha256": "e6f169dbd3460bf829328e91777c1a7101841e308aa20aaba3ac116b73d9baa3",
+      "entries": 18831
+    },
+    {
+      "id": "explorer-003",
+      "kind": "explorer",
+      "shard": 3,
+      "file": "explorer-003.kfp.gz",
+      "bytes": 621919,
+      "sha256": "52c040d7c8317f08420a34231e76473f400341bc3879130600f22271d3923c9c",
+      "entries": 19412
+    },
+    {
+      "id": "explorer-004",
+      "kind": "explorer",
+      "shard": 4,
+      "file": "explorer-004.kfp.gz",
+      "bytes": 600211,
+      "sha256": "1d2c36ab529d7e3a7aa005a61d1e33cc31fb6991f82a55f2214f8511025ed520",
+      "entries": 18851
+    },
+    {
+      "id": "explorer-005",
+      "kind": "explorer",
+      "shard": 5,
+      "file": "explorer-005.kfp.gz",
+      "bytes": 618972,
+      "sha256": "7107d48095f7aeabf1466904e9571d84ec27bab449dd6f18dc7b54b795768dd5",
+      "entries": 19413
+    },
+    {
+      "id": "explorer-006",
+      "kind": "explorer",
+      "shard": 6,
+      "file": "explorer-006.kfp.gz",
+      "bytes": 601068,
+      "sha256": "1aacb8a368af10ac1d86eea3a14b5bd5adfa737f44610a19d2dd2293dac9559d",
+      "entries": 18940
+    },
+    {
+      "id": "explorer-007",
+      "kind": "explorer",
+      "shard": 7,
+      "file": "explorer-007.kfp.gz",
+      "bytes": 624401,
+      "sha256": "0aa13ada0fb248a4f9a92e47f8abcbaa46870f151e7123f7a31ba6371eabf668",
+      "entries": 19601
+    },
+    {
+      "id": "explorer-008",
+      "kind": "explorer",
+      "shard": 8,
+      "file": "explorer-008.kfp.gz",
+      "bytes": 600337,
+      "sha256": "71ec2747e6f1367f8de9f494e459ed0aaa16b0247454bceeb6c3c5feadb32213",
+      "entries": 18927
+    },
+    {
+      "id": "explorer-009",
+      "kind": "explorer",
+      "shard": 9,
+      "file": "explorer-009.kfp.gz",
+      "bytes": 610639,
+      "sha256": "6aa75f1343b8af2af3ec675b91d8e39665a35802b8a6080a8199fc7081234b24",
+      "entries": 19045
+    },
+    {
+      "id": "explorer-010",
+      "kind": "explorer",
+      "shard": 10,
+      "file": "explorer-010.kfp.gz",
+      "bytes": 600614,
+      "sha256": "2eee49be5642638f96d7f1dc31b05efe94293a4ef11ee66a68873782b0e07b61",
+      "entries": 18891
+    },
+    {
+      "id": "explorer-011",
+      "kind": "explorer",
+      "shard": 11,
+      "file": "explorer-011.kfp.gz",
+      "bytes": 611831,
+      "sha256": "e899124f73ce4c2f8ab34c9e5b2f26958453038cacdd8e75951e492c2a3c9e53",
+      "entries": 19166
+    },
+    {
+      "id": "explorer-012",
+      "kind": "explorer",
+      "shard": 12,
+      "file": "explorer-012.kfp.gz",
+      "bytes": 601234,
+      "sha256": "c386ea2851383443263d2048c5dda1d24ea94b3e79869cbd82a0375851515852",
+      "entries": 18868
+    },
+    {
+      "id": "explorer-013",
+      "kind": "explorer",
+      "shard": 13,
+      "file": "explorer-013.kfp.gz",
+      "bytes": 612736,
+      "sha256": "6235678be658d53f2deda13c3118aef4eb324b14cf37c49e0071bac47d18f9c9",
+      "entries": 19284
+    },
+    {
+      "id": "explorer-014",
+      "kind": "explorer",
+      "shard": 14,
+      "file": "explorer-014.kfp.gz",
+      "bytes": 604850,
+      "sha256": "cc7b7c96482497096295a26fc56ee1033b07787e483a22c4b402163301114f85",
+      "entries": 18923
+    },
+    {
+      "id": "explorer-015",
+      "kind": "explorer",
+      "shard": 15,
+      "file": "explorer-015.kfp.gz",
+      "bytes": 619279,
+      "sha256": "0c27ef7ade64e66915bdadb3048197517c34961e03c48df02af6202b8a0162d0",
+      "entries": 19344
+    },
+    {
+      "id": "explorer-016",
+      "kind": "explorer",
+      "shard": 16,
+      "file": "explorer-016.kfp.gz",
+      "bytes": 598891,
+      "sha256": "b719f7ce5cde710505796fb90105e9d12bf3e92138528cc2c3eac990b52c0a91",
+      "entries": 18911
+    },
+    {
+      "id": "explorer-017",
+      "kind": "explorer",
+      "shard": 17,
+      "file": "explorer-017.kfp.gz",
+      "bytes": 614439,
+      "sha256": "85f4f8ebd68498f82f52b9732853dce4fa5976e81b1ec4549e2a1df5f49fd62f",
+      "entries": 19300
+    },
+    {
+      "id": "explorer-018",
+      "kind": "explorer",
+      "shard": 18,
+      "file": "explorer-018.kfp.gz",
+      "bytes": 600894,
+      "sha256": "39adcfd633ed3142e996ab88a8c79ff978435cf48144d0030f4343b199fae3be",
+      "entries": 18917
+    },
+    {
+      "id": "explorer-019",
+      "kind": "explorer",
+      "shard": 19,
+      "file": "explorer-019.kfp.gz",
+      "bytes": 616871,
+      "sha256": "7f82c2b289d5c377580dd5d0e1dcabb2dcd1d2fbbeeb00d890fd30764cb4b0f4",
+      "entries": 19375
+    },
+    {
+      "id": "explorer-020",
+      "kind": "explorer",
+      "shard": 20,
+      "file": "explorer-020.kfp.gz",
+      "bytes": 607225,
+      "sha256": "918552ddd0be1251eedb9f2f2eb8272c105ebf691bb93f239e1e2fbaa7a1e24e",
+      "entries": 19097
+    },
+    {
+      "id": "explorer-021",
+      "kind": "explorer",
+      "shard": 21,
+      "file": "explorer-021.kfp.gz",
+      "bytes": 621010,
+      "sha256": "568b0ff35cc90aeffe2ecbbe9e9a82c54309639e40ffc6f6ed156c8eb34728fa",
+      "entries": 19386
+    },
+    {
+      "id": "explorer-022",
+      "kind": "explorer",
+      "shard": 22,
+      "file": "explorer-022.kfp.gz",
+      "bytes": 601948,
+      "sha256": "b04ef83b153f3d6915cd59fce5e99c873e0601b3529623e31e41005a98db438c",
+      "entries": 18925
+    },
+    {
+      "id": "explorer-023",
+      "kind": "explorer",
+      "shard": 23,
+      "file": "explorer-023.kfp.gz",
+      "bytes": 620485,
+      "sha256": "0d68b29adf7dec32f500bbee40a9e64dbde37cf75a931974411dfe1d8b143770",
+      "entries": 19525
+    },
+    {
+      "id": "explorer-024",
+      "kind": "explorer",
+      "shard": 24,
+      "file": "explorer-024.kfp.gz",
+      "bytes": 599441,
+      "sha256": "0d8d55ff6f8b4ae6e57b079a0132d8fdf550f889c79b2f5b73c3ce923987abb4",
+      "entries": 18907
+    },
+    {
+      "id": "explorer-025",
+      "kind": "explorer",
+      "shard": 25,
+      "file": "explorer-025.kfp.gz",
+      "bytes": 616259,
+      "sha256": "d184f223861e677da1e482696eeb0acc9c5ce0d6d7462e97832aa31e1d46f3d1",
+      "entries": 19303
+    },
+    {
+      "id": "explorer-026",
+      "kind": "explorer",
+      "shard": 26,
+      "file": "explorer-026.kfp.gz",
+      "bytes": 603306,
+      "sha256": "64f5dd50a02338a7dbe9eceec9dbb2cf81c21d2de5f760faba02bc6e768720e1",
+      "entries": 18979
+    },
+    {
+      "id": "explorer-027",
+      "kind": "explorer",
+      "shard": 27,
+      "file": "explorer-027.kfp.gz",
+      "bytes": 619673,
+      "sha256": "5ce88837b7d86a02525cf6c45d0f8554b8b63d3694174d0ba3c2c883abeab6b8",
+      "entries": 19490
+    },
+    {
+      "id": "explorer-028",
+      "kind": "explorer",
+      "shard": 28,
+      "file": "explorer-028.kfp.gz",
+      "bytes": 610006,
+      "sha256": "bc6b66d514478708c82ce1a60b9ae2161af412c07f220fa222181744a3ebead8",
+      "entries": 19249
+    },
+    {
+      "id": "explorer-029",
+      "kind": "explorer",
+      "shard": 29,
+      "file": "explorer-029.kfp.gz",
+      "bytes": 611555,
+      "sha256": "3f7ba5728bf0defae9a4ebd667dc0cec1692151f7398363561804f7ba7e5b019",
+      "entries": 19078
+    },
+    {
+      "id": "explorer-030",
+      "kind": "explorer",
+      "shard": 30,
+      "file": "explorer-030.kfp.gz",
+      "bytes": 600830,
+      "sha256": "99f9cd0b2507269cef2ab788d436b054c36f14102e6c155286682d01b2f5e30e",
+      "entries": 18911
+    },
+    {
+      "id": "explorer-031",
+      "kind": "explorer",
+      "shard": 31,
+      "file": "explorer-031.kfp.gz",
+      "bytes": 613759,
+      "sha256": "d323af2ac4d2c7ed0cbe173aee34fa96311c324d977a04d11554cbf1b7ad8549",
+      "entries": 19295
+    },
+    {
+      "id": "explorer-032",
+      "kind": "explorer",
+      "shard": 32,
+      "file": "explorer-032.kfp.gz",
+      "bytes": 593398,
+      "sha256": "8f86fffe0c122aaedf01fe4b554f4c76c2e32b223306258d152ae513db2e0b28",
+      "entries": 18647
+    },
+    {
+      "id": "explorer-033",
+      "kind": "explorer",
+      "shard": 33,
+      "file": "explorer-033.kfp.gz",
+      "bytes": 611130,
+      "sha256": "0b77982bce2aa85edf5f93f8d4fa404005f262526d684382bd906e74edfb20a5",
+      "entries": 19094
+    },
+    {
+      "id": "explorer-034",
+      "kind": "explorer",
+      "shard": 34,
+      "file": "explorer-034.kfp.gz",
+      "bytes": 598766,
+      "sha256": "6fc8e609fc0f5b87557a34d8d283878277dc441cd2e0ddee469b6d04be3bb5d9",
+      "entries": 18837
+    },
+    {
+      "id": "explorer-035",
+      "kind": "explorer",
+      "shard": 35,
+      "file": "explorer-035.kfp.gz",
+      "bytes": 624034,
+      "sha256": "63949ae8a8874688a9c5d003b7a1e522cd247132a81c3f445245998937daef60",
+      "entries": 19543
+    },
+    {
+      "id": "explorer-036",
+      "kind": "explorer",
+      "shard": 36,
+      "file": "explorer-036.kfp.gz",
+      "bytes": 603240,
+      "sha256": "496f181f80907f87cc1475304b8bbcf542af6a4c97ed39569ba27e4c5a551086",
+      "entries": 18938
+    },
+    {
+      "id": "explorer-037",
+      "kind": "explorer",
+      "shard": 37,
+      "file": "explorer-037.kfp.gz",
+      "bytes": 615312,
+      "sha256": "4b9390d05f8374d8ea7fc1c6443a601235089f1de344a8df58966d0f0f8eb03a",
+      "entries": 19317
+    },
+    {
+      "id": "explorer-038",
+      "kind": "explorer",
+      "shard": 38,
+      "file": "explorer-038.kfp.gz",
+      "bytes": 605191,
+      "sha256": "17f90afcd5ab965f2c568e0f688e43f6eb79c6108a8bc2490bfb032822bad34b",
+      "entries": 19095
+    },
+    {
+      "id": "explorer-039",
+      "kind": "explorer",
+      "shard": 39,
+      "file": "explorer-039.kfp.gz",
+      "bytes": 615287,
+      "sha256": "c65009a1deebf4ad39663e79cf00d1cd2929a40fe69bdccea629e654ff883363",
+      "entries": 19294
+    },
+    {
+      "id": "explorer-040",
+      "kind": "explorer",
+      "shard": 40,
+      "file": "explorer-040.kfp.gz",
+      "bytes": 601361,
+      "sha256": "c899ec6e10add2b411005e2e4eb4319956dd3dd110c2144be4dc467b5f2d3516",
+      "entries": 18900
+    },
+    {
+      "id": "explorer-041",
+      "kind": "explorer",
+      "shard": 41,
+      "file": "explorer-041.kfp.gz",
+      "bytes": 613190,
+      "sha256": "abf8cac6ad96fd205a17a063890ab17809e77d08d792b363bfd8f93bde153e85",
+      "entries": 19214
+    },
+    {
+      "id": "explorer-042",
+      "kind": "explorer",
+      "shard": 42,
+      "file": "explorer-042.kfp.gz",
+      "bytes": 598305,
+      "sha256": "5ae9d51b1b0e7c4f479d621ade64d8b4ab8ba7cd35b92e82d12dd88788372819",
+      "entries": 18812
+    },
+    {
+      "id": "explorer-043",
+      "kind": "explorer",
+      "shard": 43,
+      "file": "explorer-043.kfp.gz",
+      "bytes": 609028,
+      "sha256": "e83d08000478a33eca307f71ae497434559c2a1b78bcadc0ac67f29048ddbc41",
+      "entries": 19162
+    },
+    {
+      "id": "explorer-044",
+      "kind": "explorer",
+      "shard": 44,
+      "file": "explorer-044.kfp.gz",
+      "bytes": 602784,
+      "sha256": "ee1aea8f8027f2fff7b7746686ccbf2a7037e17496748f9065c0edd0bf88252f",
+      "entries": 18941
+    },
+    {
+      "id": "explorer-045",
+      "kind": "explorer",
+      "shard": 45,
+      "file": "explorer-045.kfp.gz",
+      "bytes": 615138,
+      "sha256": "ea0211ba7f4ab590e6d406f55a425ae1ae47d0cabfe93b940aee749e7f457af5",
+      "entries": 19311
+    },
+    {
+      "id": "explorer-046",
+      "kind": "explorer",
+      "shard": 46,
+      "file": "explorer-046.kfp.gz",
+      "bytes": 603368,
+      "sha256": "a3c6c2c17a0cdec1e034cfad3b9d40d940398a8482dfd0b3f82cb5e0292a50de",
+      "entries": 19067
+    },
+    {
+      "id": "explorer-047",
+      "kind": "explorer",
+      "shard": 47,
+      "file": "explorer-047.kfp.gz",
+      "bytes": 617019,
+      "sha256": "5e87c1396a57113694336566a10289bd1fa56bc55d8b64c355d0c2d79521e386",
+      "entries": 19452
+    },
+    {
+      "id": "game-000",
+      "kind": "game",
+      "shard": 0,
+      "file": "game-000.kfp.gz",
+      "bytes": 172263,
+      "sha256": "115bba5a1bef1ff326483254b12075fcc9f739aa67e38f28b2c9e2065c096a20",
+      "entries": 718
+    },
+    {
+      "id": "game-001",
+      "kind": "game",
+      "shard": 1,
+      "file": "game-001.kfp.gz",
+      "bytes": 187885,
+      "sha256": "57a332edf7bea33519500373d8f733c7f14a8bbbcf36de523a7a198f4914847b",
+      "entries": 796
+    },
+    {
+      "id": "game-002",
+      "kind": "game",
+      "shard": 2,
+      "file": "game-002.kfp.gz",
+      "bytes": 185846,
+      "sha256": "13e90e60b49c821bb5a3d8f2874f4f6d7482aee04c9718d855e34fc7a5727bc7",
+      "entries": 778
+    },
+    {
+      "id": "game-003",
+      "kind": "game",
+      "shard": 3,
+      "file": "game-003.kfp.gz",
+      "bytes": 172091,
+      "sha256": "94e6716849adb8ee09e065c95888cae50ea167609909eaf2a8c06fe1ded930fb",
+      "entries": 724
+    },
+    {
+      "id": "game-004",
+      "kind": "game",
+      "shard": 4,
+      "file": "game-004.kfp.gz",
+      "bytes": 176729,
+      "sha256": "ea8bb36da8178f23955b21b03f8ec973e14a0038bc6a4ee3b93374b4da347d3b",
+      "entries": 738
+    },
+    {
+      "id": "game-005",
+      "kind": "game",
+      "shard": 5,
+      "file": "game-005.kfp.gz",
+      "bytes": 186747,
+      "sha256": "27b11476ce5bfdb5ade0ae8e3de6445c3b0c3e80d7f519b2b4fec3d1362e74c9",
+      "entries": 783
+    },
+    {
+      "id": "game-006",
+      "kind": "game",
+      "shard": 6,
+      "file": "game-006.kfp.gz",
+      "bytes": 183957,
+      "sha256": "455e9a2b8c9b8a88be195bdbb87ae5451c43224256e69d6cb080687085df6e73",
+      "entries": 769
+    },
+    {
+      "id": "game-007",
+      "kind": "game",
+      "shard": 7,
+      "file": "game-007.kfp.gz",
+      "bytes": 179656,
+      "sha256": "0f049cb0af840bd09c482e79211ea96a71efda0a3776067fd327a69f7ecf45c2",
+      "entries": 751
+    },
+    {
+      "id": "game-008",
+      "kind": "game",
+      "shard": 8,
+      "file": "game-008.kfp.gz",
+      "bytes": 186849,
+      "sha256": "23946985a48d371aa8a0aee0dfbce682f372677d810dd374359234921f7e9369",
+      "entries": 781
+    },
+    {
+      "id": "game-009",
+      "kind": "game",
+      "shard": 9,
+      "file": "game-009.kfp.gz",
+      "bytes": 184896,
+      "sha256": "eb74ed067663f37e9b4ffc3394fd9f059c0c6f1a2a457ed6b093006fde9e0b21",
+      "entries": 775
+    },
+    {
+      "id": "game-010",
+      "kind": "game",
+      "shard": 10,
+      "file": "game-010.kfp.gz",
+      "bytes": 185380,
+      "sha256": "057cc359fcf2fc2ff051c0f8eff53a9ee8183b83976fd9889a0005a313b3fcf6",
+      "entries": 767
+    },
+    {
+      "id": "game-011",
+      "kind": "game",
+      "shard": 11,
+      "file": "game-011.kfp.gz",
+      "bytes": 182334,
+      "sha256": "2f0e2c9a45ebfca3bbc4ed147d04e862d07751b094843c66292091b065189674",
+      "entries": 757
+    },
+    {
+      "id": "game-012",
+      "kind": "game",
+      "shard": 12,
+      "file": "game-012.kfp.gz",
+      "bytes": 178781,
+      "sha256": "2e1353cfa62359960628e2c08d21e32e670fa635f8c54e25e1994918e46949de",
+      "entries": 736
+    },
+    {
+      "id": "game-013",
+      "kind": "game",
+      "shard": 13,
+      "file": "game-013.kfp.gz",
+      "bytes": 170610,
+      "sha256": "90cbe2f6e6ffdf5bfb463c7ced01bf6cb56a9f12f974f62f39bf34f67395db10",
+      "entries": 724
+    },
+    {
+      "id": "game-014",
+      "kind": "game",
+      "shard": 14,
+      "file": "game-014.kfp.gz",
+      "bytes": 174595,
+      "sha256": "9681c7cedc4cddca07b09ba94f5a42d7dbd89d0cee71454aa33a48046eb01b30",
+      "entries": 733
+    },
+    {
+      "id": "game-015",
+      "kind": "game",
+      "shard": 15,
+      "file": "game-015.kfp.gz",
+      "bytes": 186229,
+      "sha256": "b614256ee9873ccbcc20923ef661bc3c858f065d5c1f3b09badd1c01a48a2a47",
+      "entries": 766
+    },
+    {
+      "id": "game-016",
+      "kind": "game",
+      "shard": 16,
+      "file": "game-016.kfp.gz",
+      "bytes": 188178,
+      "sha256": "6029a216a79304ffe60ef4b152e8cc14251a72c1e1ecc10b102f593ef458d5d3",
+      "entries": 779
+    },
+    {
+      "id": "game-017",
+      "kind": "game",
+      "shard": 17,
+      "file": "game-017.kfp.gz",
+      "bytes": 180054,
+      "sha256": "6d2bb4725e0f25145232180c702b5aa2ce40ddf5cf48a9f4765ad2de09754e64",
+      "entries": 752
+    },
+    {
+      "id": "game-018",
+      "kind": "game",
+      "shard": 18,
+      "file": "game-018.kfp.gz",
+      "bytes": 174466,
+      "sha256": "bffa5adfab0835febfbd60cb888eea86bf5c7c1c2c6da5ecdca9ab4496cf85c6",
+      "entries": 725
+    },
+    {
+      "id": "game-019",
+      "kind": "game",
+      "shard": 19,
+      "file": "game-019.kfp.gz",
+      "bytes": 180258,
+      "sha256": "9024811b835c44ba3df208ef4da9706edb34baec462d5680e00ea03a65078b85",
+      "entries": 749
+    },
+    {
+      "id": "game-020",
+      "kind": "game",
+      "shard": 20,
+      "file": "game-020.kfp.gz",
+      "bytes": 185702,
+      "sha256": "faf71ba069a0f068ed94c625c097988846487e7fd414f1423de164f5164b4cf7",
+      "entries": 786
+    },
+    {
+      "id": "game-021",
+      "kind": "game",
+      "shard": 21,
+      "file": "game-021.kfp.gz",
+      "bytes": 178703,
+      "sha256": "5b34ce25ca7a5074007ff3bbdbe249901a3a86dcd0e3517ad2bfb0d49f9d348c",
+      "entries": 746
+    },
+    {
+      "id": "game-022",
+      "kind": "game",
+      "shard": 22,
+      "file": "game-022.kfp.gz",
+      "bytes": 179968,
+      "sha256": "fca342bb08a93daf2aba2430bd6681910ba7df28f9f45882da7930f96a917f56",
+      "entries": 762
+    },
+    {
+      "id": "game-023",
+      "kind": "game",
+      "shard": 23,
+      "file": "game-023.kfp.gz",
+      "bytes": 180689,
+      "sha256": "c96fb3b13f010acc80fdf820b2e2f5fa059a297060bac8d4217a2010b01f3ab3",
+      "entries": 756
+    },
+    {
+      "id": "players-000",
+      "kind": "players",
+      "shard": 0,
+      "file": "players-000.kfp.gz",
+      "bytes": 17670,
+      "sha256": "760bfdd32944c0fb4226184fb75e7b6f736ad4a82164f477bff986a61391f180",
+      "entries": 664
+    },
+    {
+      "id": "players-001",
+      "kind": "players",
+      "shard": 1,
+      "file": "players-001.kfp.gz",
+      "bytes": 17321,
+      "sha256": "f5275482c2768ec27ae3b381e79ac88645c6579ed38027ac8db33a417ea219c4",
+      "entries": 646
+    },
+    {
+      "id": "players-002",
+      "kind": "players",
+      "shard": 2,
+      "file": "players-002.kfp.gz",
+      "bytes": 17165,
+      "sha256": "ff44ebf93d9e2b4dc1282d0b0a11d9d811cb7951685bbc1d45b8f1335f7d5c12",
+      "entries": 637
+    },
+    {
+      "id": "players-003",
+      "kind": "players",
+      "shard": 3,
+      "file": "players-003.kfp.gz",
+      "bytes": 17398,
+      "sha256": "626277310391fb26e017c081a36f9619d4b6079ef8adb180d8811133eca0ab8d",
+      "entries": 650
+    },
+    {
+      "id": "playergames-000",
+      "kind": "playergames",
+      "shard": 0,
+      "file": "playergames-000.kfp.gz",
+      "bytes": 53157,
+      "sha256": "600c4de719963a2481b227baaa09dcbae91a05bdac0a9a7341763f5a7ba4fa97",
+      "entries": 251
+    },
+    {
+      "id": "playergames-001",
+      "kind": "playergames",
+      "shard": 1,
+      "file": "playergames-001.kfp.gz",
+      "bytes": 44278,
+      "sha256": "eb5bb03d2d1f0d5ffbe767d8dfd0d22684b78f92ab082b9353cd312423bd5979",
+      "entries": 233
+    },
+    {
+      "id": "playergames-002",
+      "kind": "playergames",
+      "shard": 2,
+      "file": "playergames-002.kfp.gz",
+      "bytes": 53018,
+      "sha256": "fccd83f8661ee7a5f7d565b80182b5e9fdf451c7e397ce360643d605838562b0",
+      "entries": 256
+    },
+    {
+      "id": "playergames-003",
+      "kind": "playergames",
+      "shard": 3,
+      "file": "playergames-003.kfp.gz",
+      "bytes": 54942,
+      "sha256": "a22bff0a54868333f32f67702137b085de4c85ef80ecd93464dd9f581b9848e3",
+      "entries": 244
+    }
+  ],
+  "rawBytes": 108151790,
+  "compressedBytes": 33847971
+}
