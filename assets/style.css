@@ -21,10 +21,11 @@
   --radius-lg: 22px;
   --shadow-frame: 0 30px 80px -20px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.06);
   --shadow-button: 0 0 0 1px rgba(92, 184, 220, 0.4), 0 8px 32px rgba(92, 184, 220, 0.18);
-  --font: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", "Helvetica Neue",
-    Helvetica, Arial, sans-serif;
-  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
-  --max: 1200px;
+  --font:
+    -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace;
+  --max: 1320px;
   --gutter: 1.5rem;
 }
 
@@ -208,7 +209,11 @@ img {
   font-size: 0.97rem;
   line-height: 1;
   white-space: nowrap;
-  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease, box-shadow 200ms ease;
+  transition:
+    transform 120ms ease,
+    background 120ms ease,
+    border-color 120ms ease,
+    box-shadow 200ms ease;
 }
 
 .btn:hover {
@@ -224,7 +229,11 @@ img {
 }
 
 .btn-primary:hover {
-  background: linear-gradient(180deg, color-mix(in srgb, var(--accent-2) 92%, white), var(--accent));
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--accent-2) 92%, white),
+    var(--accent)
+  );
   color: #0a0e14;
 }
 
@@ -356,7 +365,7 @@ img {
 
 .hero-title {
   font-size: clamp(2.6rem, 5.2vw + 1rem, 4.5rem);
-  line-height: 1.0;
+  line-height: 1;
   letter-spacing: -0.03em;
   font-weight: 600;
   margin: 0 0 1.4rem;
@@ -389,6 +398,43 @@ img {
   color: var(--text-mute);
   font-size: 0.86rem;
   margin: 0;
+}
+
+@media (max-width: 759px) {
+  .hero {
+    padding-top: 2.5rem;
+  }
+
+  .hero-eyebrow {
+    margin-bottom: 1rem;
+  }
+
+  .hero-title {
+    margin-bottom: 1rem;
+  }
+
+  .hero-lede {
+    font-size: 1rem;
+    margin-bottom: 1.4rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero {
+    padding-top: 2rem;
+  }
+
+  .hero-inner {
+    gap: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-meta {
+    display: none;
+  }
 }
 
 /* ============== HERO PRODUCT ============== */
@@ -455,6 +501,21 @@ img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.hero-product-frame picture,
+.research-frame picture,
+.engines-frame picture {
+  display: block;
+}
+
+@media (max-width: 759px) {
+  .hero-product-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 68% center;
+  }
 }
 
 /* ============== HERO STRIP ============== */
@@ -649,7 +710,7 @@ img {
 
 .research-frame {
   width: 100%;
-  max-width: 640px;
+  max-width: 760px;
   border-radius: var(--radius-lg);
   background: var(--bg-elev);
   border: 1px solid var(--line-strong);
@@ -703,7 +764,7 @@ img {
 
 .engines-frame {
   width: 100%;
-  max-width: 640px;
+  max-width: 760px;
   border-radius: var(--radius-lg);
   background: var(--bg-elev);
   border: 1px solid var(--line-strong);
@@ -715,6 +776,23 @@ img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+@media (max-width: 759px) {
+  .research-img,
+  .engines-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+  }
+
+  .research-img {
+    object-position: 68% center;
+  }
+
+  .engines-img {
+    object-position: 82% center;
+  }
 }
 
 /* ============== LOCAL ============== */
