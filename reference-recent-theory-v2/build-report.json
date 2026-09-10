@@ -1,0 +1,69 @@
+{
+  "packId": "kingfisher-recent-theory",
+  "packVersion": "2",
+  "source": "Lichess broadcast archive",
+  "license": "CC-BY-SA-4.0",
+  "buildCommit": null,
+  "buildDate": "2026-09-10T15:54:35.075Z",
+  "window": {
+    "lastYear": 2026,
+    "archiveMonths": [
+      "2026-08",
+      "2026-07",
+      "2026-06",
+      "2026-05",
+      "2026-04",
+      "2026-03"
+    ],
+    "speeds": null,
+    "minRating": 2400
+  },
+  "filter": {
+    "minPlies": 12,
+    "minGames": 2,
+    "deepFromPly": 18,
+    "deepMinGames": 1,
+    "maxPly": 41,
+    "maxRating": 2900,
+    "openRating": 2500,
+    "titles": [
+      "GM",
+      "IM",
+      "WGM"
+    ],
+    "openTitles": [
+      "GM",
+      "IM"
+    ],
+    "excludeOnline": true
+  },
+  "inputGames": 223248,
+  "acceptedGames": 11280,
+  "rejectedGames": 0,
+  "rejectedByReason": {
+    "bad_result": 12416,
+    "too_short": 4559,
+    "non_standard_variant": 2438,
+    "set_up_position": 4,
+    "missing_player": 0,
+    "missing_rating": 8440,
+    "below_min_rating": 178350,
+    "above_max_rating": 950,
+    "bot_match": 14,
+    "online_event": 4797,
+    "duplicate": 0,
+    "illegal_moves": 0
+  },
+  "duplicates": 0,
+  "replayFailures": 0,
+  "openedGames": 4601,
+  "positions": 250498,
+  "players": 1577,
+  "openableGames": 4600,
+  "fullGames": 4600,
+  "compressedBytes": 8985913,
+  "rawBytes": 29363691,
+  "chunks": 48,
+  "maxPly": 40,
+  "retainedBySpeed": {}
+}
