@@ -1,8 +1,8 @@
 {
   "format": "kingfisher-channel/1",
   "id": "kingfisher-recent-theory-narrow",
-  "version": "3",
-  "manifest": "reference-recent-v3/manifest.json",
+  "version": "4",
+  "manifest": "reference-recent-v4/manifest.json",
   "months": [
     "2026-08",
     "2026-07",
@@ -11,5 +11,5 @@
     "2026-04",
     "2026-03"
   ],
-  "builtAt": "2026-09-25"
+  "builtAt": "2026-09-26"
 }
